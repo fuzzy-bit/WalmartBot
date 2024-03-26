@@ -1,0 +1,9 @@
+{
+  "MISSKEY_HOST": "",
+
+  "DISCORD_TOKEN": "",
+  "MISSKEY_TOKEN": "",
+
+  "DISCORD_CHANNEL_ID": "",
+  "DISCORD_ROLE_ID": ""
+}
