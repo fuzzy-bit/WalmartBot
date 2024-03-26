@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+group = 'buddy.fuzzy.walmart'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    // Discord
+    implementation("net.dv8tion:JDA:5.0.0-beta.21")
+    implementation 'com.github.kaktushose:jda-commands:4.0.0-beta.1'
+
+    // JSON
+    implementation("com.fasterxml.jackson.core:jackson-core:2.16.0")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.16.0")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.16.0")
+
+    // Logging
+    implementation 'org.apache.logging.log4j:log4j-api:2.23.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.23.1'
+
+    // Camera
+    implementation 'com.github.sarxos:webcam-capture:0.3.12'
+
+    // Misskey
+    implementation 'com.github.uakihir0:misskey4j:0.5.0'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'buddy.fuzzy.walmart.Main'
+    }
+}
